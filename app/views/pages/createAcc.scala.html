@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="@routes.Assets.versioned("assets/bootstrap/css/bootstrap.css")">
+        <script type='text/javascript' src='@routes.Assets.versioned("assets/bootstrap/js/bootstrap.js")'></script>
+        <title>Create Your Account</title>
+    </head>
+    <body>
+        <form action="@routes.LoginController.addUser()" method="post">
+            <input name="username" type="text"><br>
+            <input name="password" type="text"><br>
+            <input name="institution" type="text"><br>
+            <button>Add User</button>
+        </form>
+    </body>
+</html>
